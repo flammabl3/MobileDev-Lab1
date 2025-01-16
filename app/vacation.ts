@@ -1,9 +1,7 @@
 export default function VacationDestination(place: string) {
-    return "Let's go to ${place}";
+    return `Let's go to ${place}`;
 }
 
-export const VacationPricing = {
-    getPrice: () => {
-        return 100;
-    }
+export function VacationPricing(price: Number) {
+    return price;
 };

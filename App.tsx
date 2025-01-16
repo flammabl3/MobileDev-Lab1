@@ -31,7 +31,7 @@ export default function App() {
     height: 5.11
   }
 
-  const kirk: OtherPerson = {name: name, age: age, vacDest: VacationDestination("Taiwan"), vacationPrice: VacationPricing.getPrice()};
+  const kirk: OtherPerson = {name: name, age: age, vacDest: VacationDestination("Taiwan"), vacationPrice: VacationPricing(100)};
   const datalist = [data, kirk];
 
   console.log(datalist[0].name);
@@ -67,5 +67,8 @@ const styles = StyleSheet.create({
   Title:  {
     fontSize: 20,
     fontWeight: "bold"
+  },
+  Body Items:  {
+
   }
 });
