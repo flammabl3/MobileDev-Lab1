@@ -1,7 +1,12 @@
 {
   "expo": {
+<<<<<<< HEAD
+    "name": "my-app",
+    "slug": "my-app",
+=======
     "name": "lab_1_typescript_review",
     "slug": "lab_1_typescript_review",
+>>>>>>> origin/Neeraj-Workspace
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

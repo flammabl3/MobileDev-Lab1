@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+export default function VacationDestination(place: string) {
+    return `Let's go to ${place}`;
+}
+
+export function VacationPricing(price: Number) {
+    return price;
+};
+=======
+export function vacationDestination(place: string) {
+   return `Let's go to ${place}`;
+}
+
+export const vacationPricing = (price: number) => {
+  return `${price}`;
+}
+>>>>>>> origin/Neeraj-Workspace

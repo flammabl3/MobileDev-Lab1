@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
+  "name": "my-app2",
+=======
   "name": "lab_1_typescript_review",
+>>>>>>> origin/Neeraj-Workspace
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
