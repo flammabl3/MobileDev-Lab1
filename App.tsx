@@ -72,12 +72,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-
+  //style the button
   clickableText:{fontSize: 20, color: 'black', gap:10 , backgroundColor: 'lightblue', padding: 10, borderRadius: 10, marginTop:10},  
 
 //style the text tag 
  Text:{fontSize: 20, color: 'black', gap:10 , backgroundColor: 'lightblue', padding: 10, borderRadius: 10,  textAlign: 'center', fontWeight: 'bold', marginBottom: 10},
-
+ 
+//style the paragraphh
   ParaText:{fontSize: 15, color: 'black', gap:10 , borderRadius: 10,   textAlign: 'center', fontWeight: '500'}
 
 });
