@@ -11,7 +11,7 @@ type Person = { name: string, age: number, isStudent?: boolean };
 
 interface Person2 {name:string , occupation:string, isStudent?:boolean, vacationDestination?: string, vacationPricing?: string}; 
 
-const name = 'John Doe';
+const name = 'Neeraj Bachwani';
 let occupation: string = 'Software Engineer';
 const isStudent: boolean = true;
 const age: number = 18;
@@ -19,7 +19,7 @@ const age: number = 18;
 //const occupation?: string = 'Software Engineer'; // optional
 
 const data: Person = {
-  name: 'John Doe', 
+  name: 'Neeraj Bachwani', 
   age: 18, 
   isStudent: true
 };
@@ -31,7 +31,7 @@ const data2: Person = {
 };
 
 const data3: Person2 = { 
-  name: 'John Doe', 
+  name: 'Neeraj Bachwani', 
   occupation: 'Student' ,
   isStudent: true ,
   vacationDestination: vacationDestination('Paris'),
@@ -47,12 +47,16 @@ console.log(datalist[0].isStudent);
     
     <View style={styles.container}>
       <View>
-      <Text>Welcome {name} lets go to {data3.vacationDestination}</Text> 
-      <Text>The pricing is {data3.vacationPricing}</Text> 
+      <Text style = {styles.Text}>Welcome </Text> 
+      <Text style = {styles.ParaText}>{name} lets go to {data3.vacationDestination}</Text> 
+      <Text style = {styles.ParaText}>The pricing is {data3.vacationPricing}</Text> 
       </View>
-      <StatusBar style="auto" />
-      <View>
-
+      <StatusBar style="auto" /> 
+      <View> 
+       // create a button that will show up a alert message when clicked.
+        <TouchableOpacity onPress={() => alert('Have Fun in Paris !')}>
+          <Text style={styles.clickableText}>Click for surprise</Text>
+        </TouchableOpacity>
       </View>
     </View>
     
@@ -69,5 +73,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
-  clickableText:{fontSize: 20, color: 'blue', textDecorationLine: 'underline', gap:10}
+  clickableText:{fontSize: 20, color: 'black', gap:10 , backgroundColor: 'lightblue', padding: 10, borderRadius: 10, marginTop:10},  
+
+//style the text tag 
+ Text:{fontSize: 20, color: 'black', gap:10 , backgroundColor: 'lightblue', padding: 10, borderRadius: 10,  textAlign: 'center', fontWeight: 'bold', marginBottom: 10},
+
+  ParaText:{fontSize: 15, color: 'black', gap:10 , borderRadius: 10,   textAlign: 'center', fontWeight: '500'}
+
 });
